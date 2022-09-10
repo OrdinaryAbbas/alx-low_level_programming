@@ -3,9 +3,10 @@
 #include <time.h>
 
 /**
- * main is the entry point of the program
+ * main - is the entry point of the program
  * It creates a random number each time it runs
  * It contains selection statements
+ * Return:(0) success
  */
 
 int main(void)
@@ -16,18 +17,19 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	last_Digit = n % 10;
 
+	printf("The last digit of %d is %d", n, last_Digit);
+
 	if (last_Digit > 5)
 	{
-		printf("The last digit of %d is %d and is greater than 5\n", n, last_Digit);
+		printf("and is greater than 5\n");
 	}
 	else if (!(last_Digit == 0) && (last_Digit < 6))
 	{
-		printf("The last digit of %d is %d and is less than 6
-					and not 0\n", n, last_Digit);
+		printf("and is less than 6 and not 0\n");
 	}
 	else
 	{
-		printf("The last digit of %d is %d and is 0\n", n, last_Digit);
+		printf("and is 0\n");
 	}
 
 	return (0);

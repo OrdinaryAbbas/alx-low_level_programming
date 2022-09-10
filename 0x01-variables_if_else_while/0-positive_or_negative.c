@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main function is the entry point
+ * main - function is the entry point
  * Contains a random number generator
  * Contains if else statements to check the nature of number
  * Return: Success always (0)
